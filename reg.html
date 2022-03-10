@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Creative Colorlib SignUp Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="css/regi.css" />
+    <script type="application/x-javascript">
+      addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); }
+    </script>
+    <!-- Custom Theme files -->
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <!-- //Custom Theme files -->
+    <!-- web font -->
+    <link
+      href="//fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i"
+      rel="stylesheet"
+    />
+    <!-- //web font -->
+  </head>
+  <style>
+    .button {
+      border-radius: 4px;
+      background-color: #f4511e;
+      border: 2px solid #f4511e;
+      color: #ffffff;
+      text-align: center;
+
+      font-size: 48px;
+      padding: 20px;
+      width: 300px;
+      transition: all 0.5s;
+      cursor: pointer;
+      margin: 5px;
+      border-radius: 15px;
+    }
+
+    .button span {
+      cursor: pointer;
+      display: inline-block;
+      position: relative;
+      transition: 0.5s;
+    }
+
+    .button span:after {
+      content: "\00bb";
+      position: absolute;
+      opacity: 0;
+      top: 0;
+      right: -20px;
+      transition: 0.5s;
+    }
+
+    .button:hover span {
+      padding-right: 25px;
+    }
+
+    .button:hover span:after {
+      opacity: 1;
+      right: 0;
+    }
+  </style>
+  <body>
+    <!-- main -->
+    <div class="main-w3layouts wrapper background">
+      <p
+        style="
+          font-weight: bolder;
+          color: rgba(255, 230, 0, 0.801);
+          padding-top: 200px;
+          padding-left: 25px;
+
+          font-size: 28px;
+          font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        "
+      >
+        The registration for MINARE 2022 will be done online via Google
+        forms.The Google forms can be filled in only once. The link for the
+        registration form is given below, and the registration will be active
+        till 2nd of March 6:00 p.m.
+      </p>
+      <div class="btn" style="padding-top: 20px">
+        <button style="display: flex; margin: auto" class="button">
+          <span
+            ><a href="https://forms.gle/jwLVb8ABWtBDsg8i6" target="blank"
+              >Click here</a
+            >
+          </span>
+        </button>
+      </div>
+
+      <div class="colorlibcopy-agile">
+        <!-- <p>
+          © 2018 Colorlib Signup Form. All rights reserved | Design by
+          <a href="https://colorlib.com/" target="_blank">Colorlib</a>
+        </p> -->
+      </div>
+      <!-- //copyright -->
+      <ul class="colorlib-bubbles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+    <script>
+      import { LightningElement } from "lwc";
+
+      export default class ButtonBasic extends LightningElement {
+        clickedButtonLabel;
+
+        handleClick(event) {
+          this.clickedButtonLabel = event.target.label;
+        }
+      }
+    </script>
+    <!-- //main -->
+  </body>
+</html>
